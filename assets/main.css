@@ -42,6 +42,14 @@ li {
     font-size: 0.9rem;
 }
 
+.lang_select {
+    color: #ABD373;
+
+   
+}
+ option {
+        color: black;
+    }
 #nav .nav_middle {
     display: flex;
     justify-content: space-between;
@@ -137,6 +145,17 @@ li {
     color: #666;
 }
 
+
+
+/* side navbar section */
+#side_navbar{
+    width: 25%;
+    height: 100%;
+    background-color: lightslategray;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+}
 .header {
     position: sticky;
     top: 0;
@@ -153,7 +172,7 @@ li {
     color: rgb(100, 119, 129);
     position: relative;
     text-decoration: none;
-    
+
 }
 
 .header a::before {
@@ -187,12 +206,12 @@ li {
 .header>ul {
     display: flex;
     gap: 30px;
-    
+
 }
 
 .header>ul li {
     position: relative;
-   
+
 }
 
 .header>ul li ul {
@@ -201,7 +220,7 @@ li {
     background-color: rgb(219, 240, 188);
     width: 160px;
     margin: 20px;
-    
+
 }
 
 .header>ul li .listbox {
@@ -213,12 +232,12 @@ li {
     gap: 30px;
     border: 1px solid rgb(219, 240, 188);
     background-color: rgb(219, 240, 188);
-      z-index: 1;
+
 }
 
 .header>ul li .listbox ul {
     position: static;
-   
+
 }
 
 .header>ul li:hover ul {
@@ -302,6 +321,7 @@ li {
     border: 1px solid #ABD373;
     transition: 0.6s;
 }
+
 /* section shipping payment services start */
 .container .image {
     display: flex;
@@ -326,6 +346,7 @@ li {
     justify-content: space-around;
     align-items: center;
 }
+
 /* section shipping payment services   end */
 
 
@@ -383,6 +404,7 @@ li {
 .featured_btn:hover {
     color: #ABD373;
 }
+
 /* section product end */
 
 .primary_img {
@@ -422,9 +444,11 @@ li {
     margin-left: 18px;
 
 }
-.text_h4{
+
+.text_h4 {
     color: #ABD373;
 }
+
 .img_blog {
 
     margin-left: 20px;
@@ -478,7 +502,7 @@ li {
 .brand_area {
     width: 1000px;
     height: 250px;
-    background-color: #D0E7D2;
+    background-image: url(https://htmldemo.net/pronia/pronia/assets/images/brand/bg/1-1170x300.jpg);
     margin-left: 250px;
     display: flex;
     justify-content: center;
@@ -495,15 +519,24 @@ li {
     image-rendering: #393939;
 }
 
-/* footer  */
+/* pronia footer  section */
 .pronia_footer {
-    background-color: #D2E3C8;
+    background-image: url(https://htmldemo.net/pronia/pronia/assets/images/footer/bg/1-1920x465.jpg);
     width: 1540px;
     height: 400px;
     margin-top: 80px;
+   
 
 }
-
+.copyright{
+    border-top: 1px solid #abd373;
+    text-align: center;
+    color: #506e26;
+    font-size: 12px;
+}
+.fa-heart{
+    color: red;
+}
 .pronia_container {
     display: flex;
     justify-content: center;
@@ -530,6 +563,7 @@ li {
     width: 50px;
     height: 40px;
     text-align: center;
+    line-height: 40px;
 
     &:hover {
         background-color: #abd373;
@@ -544,6 +578,7 @@ li {
     width: 50px;
     height: 40px;
     text-align: center;
+    line-height: 40px;
 
     &:hover {
         background-color: #abd373;
@@ -560,6 +595,7 @@ li {
     height: 40px;
     text-align: center;
     margin-top: 20px;
+    line-height: 40px;
 
     &:hover {
         background-color: #abd373;
@@ -574,6 +610,7 @@ li {
     width: 50px;
     height: 40px;
     text-align: center;
+    line-height: 40px;
 
     &:hover {
         background-color: #abd373;
@@ -632,7 +669,7 @@ li {
     position: absolute;
     content: "";
     top: 50%;
-    left: 539px;
+    left: 529px;
 }
 
 .title_client::after {
@@ -642,7 +679,7 @@ li {
     position: absolute;
     content: "";
     top: 50%;
-    right: 539px;
+    right: 529px;
 }
 
 .lorem_client {
@@ -697,12 +734,13 @@ li {
     display: grid;
     justify-items: center;
     grid-template-columns: auto auto auto auto;
-   
+
 }
 
 .fa-star {
-    color: yellow;
+    color: #F4CE14;
 }
+
 /* section banner */
 /* .banner_area_one{
     margin-top: 30px;
@@ -718,14 +756,14 @@ li {
 } */
 
 
-.banner_area_main{
-    .banner_one_image_one{
+.banner_area_main {
+    .banner_one_image_one {
         display: flex;
         position: relative;
         align-items: center;
     }
-   
-    .banner_content_text_position_left{
+
+    .banner_content_text_position_left {
         position: absolute;
         display: grid;
         gap: 20px;
@@ -734,26 +772,29 @@ li {
         width: 200px;
         font-size: 20px;
     }
+
     .banner_btn:hover {
-                background-color: grey;
-                transition: 0.6s;
-            }
-        
-            .banner_btn {
-                background-color: #abd373;
-                width: 113px;
-                height: 40px;
-                border-radius: 50px;
-                border: 1px solid #abd373;
-            }
+        background-color: grey;
+        transition: 0.6s;
+    }
+
+    .banner_btn {
+        background-color: #abd373;
+        width: 113px;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid #abd373;
+    }
 }
-.banner_area_one{
+
+.banner_area_one {
     margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.banner_area_two{
+
+.banner_area_two {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -807,18 +848,18 @@ li {
 }
 
 
-.section_plant{
+.section_plant {
     background-image: url(https://htmldemo.net/pronia/pronia/assets/images/slider/bg/1-1.jpg);
     position: relative;
 
-    &:hover .slider-buttons .fa-solid{
+    &:hover .slider-buttons .fa-solid {
         visibility: visible;
         opacity: 1;
     }
 
-    .slider-buttons{
-        .fa-solid{
-            
+    .slider-buttons {
+        .fa-solid {
+
             visibility: none;
             opacity: 0;
             position: absolute;
@@ -826,17 +867,20 @@ li {
             padding: 20px;
             cursor: pointer;
             transition: all .4s ease;
-            margin:0 15px;
-            &:hover{
-                background-color:  #abd373;
+            margin: 0 15px;
+
+            &:hover {
+                background-color: #abd373;
                 color: #f3f7ef;
             }
         }
-        .fa-angle-left{
+
+        .fa-angle-left {
             left: 0;
             top: 50%;
         }
-        .fa-angle-right{
+
+        .fa-angle-right {
             right: 0;
             top: 50%;
         }
